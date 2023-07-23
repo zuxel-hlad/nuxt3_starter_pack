@@ -1,12 +1,7 @@
 <template lang="pug">
-h1 {{ title }}
+section
+    h1 Main Page
+    nuxt-link(to="/about") About
 </template>
-
-<script setup lang="ts">
-const title = ref('Nuxt Starter pack');
-</script>
-<style scoped lang="scss">
-h1 {
-    font-size: 76px;
-}
-</style>
+<script setup lang="ts"></script>
+<style lang=""></style>

@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+    devtools: { enabled: false },
     app: {
         pageTransition: { name: 'page', mode: 'out-in' },
     },
@@ -15,8 +16,6 @@ export default defineNuxtConfig({
             },
         },
     },
-    typescript: {
-        strict: true,
-    },
-    modules: ['@nuxtjs/eslint-module', '@pinia/nuxt'],
+
+    modules: ['@pinia/nuxt'],
 });

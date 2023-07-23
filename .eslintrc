@@ -1,0 +1,48 @@
+{
+    "extends": [
+        "eslint:recommended",
+        "@vue/airbnb",
+        "@vue/eslint-config-airbnb-with-typescript",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:import/typescript",
+        "plugin:vue/essential",
+        "plugin:prettier"
+    ],
+    "plugins": ["@typescript-eslint", "prettier"],
+    "rules": {
+        "vue/multi-word-component-names": 0,
+        "indent": ["error", 4],
+        "no-tabs": 0,
+        "prettier/prettier": [
+            "error",
+            {
+                "trailingComma": "es5",
+                "singleQuote": true,
+                "printWidth": 80,
+                "tabWidth": 4,
+                "useTabs": false,
+                "semi": true,
+                "endOfLine": "auto",
+                "singleAttributePerLine": true,
+                "arrowParens": "avoid"
+            }
+        ],
+        "vue/html-indent": ["error", 4],
+        "vue/singleline-html-element-content-newline": 0,
+        "vue/component-name-in-template-casing": ["error", "kebab-case"],
+        "vue/valid-v-slot": [
+            "error",
+            {
+                "allowModifiers": true
+            }
+        ]
+    },
+    "settings": {
+        "import/resolver": {
+            "alias": {
+                "map": [["~", "."]],
+                "extensions": [".vue", ".js"]
+            }
+        }
+    }
+}
